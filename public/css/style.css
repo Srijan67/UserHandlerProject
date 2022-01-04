@@ -1,0 +1,83 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: pink;
+  text-align: center;
+}
+nav {
+  background-color: indigo;
+  width: 100%;
+}
+.nav-links {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  background-attachment: fixed;
+}
+.nav-links li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+.nav-links li a:hover {
+  color: red;
+  transition: all 500ms ease-in-out;
+}
+input {
+  padding: 10px;
+  background-color: grey;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 20px 3px;
+}
+input[type="email"] {
+  font-size: 1rem;
+  min-width: 20vw;
+}
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px;
+  box-shadow: 3px 5px 7px darkslategrey;
+}
+input[type="submit"]:hover {
+  background-color: turquoise;
+  color: darkslategrey;
+  box-shadow: -2px -3px 7px darkslategrey;
+  transition: all 300ms ease-out;
+}
+::placeholder {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.form-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  padding: 0.5rem;
+  width: fit-content;
+  background-color: darkslategrey;
+  border-radius: 1.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1.1px;
+}
+input[type="radio"] span {
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  color: white;
+}

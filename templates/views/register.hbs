@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+{{>head}}
+    <title>Register</title>
+  </head>
+  <body>
+      {{>navbar}}
+    <h1>This is registration form</h1>
+    <form action="/register" method="post">
+    <input type="text" class="form-columns" value="" name="firstname" autocomplete="on" autofocus placeholder="First Name*" autocapitalize="on">
+    <input type="text" class="form-columns" value="" name="lastname" autocomplete="on" placeholder="Last Name*" autocapitalize="on">
+    <input type="email" class="form-columns" value="" name="email" autocomplete="on" placeholder="Email*">
+    <input type="text"  name="phone" class="form-columns" placeholder="Phone Number*" value="">
+    <input type="number" min="13" name="age" class="form-columns" placeholder="Age*" value="">
+    <div class="form-group">
+        <div class="genderValue">
+        <label class="genVal">
+        <input type="radio" name="gender" value="Male" checked><span>Male</span>
+        </label>
+        <label class="genVal">
+        <input type="radio" name="gender" value="Female"><span>Female</span>
+        </label>
+        </div>
+    </div>
+    <input type="password" name="password" class="form-columns" placeholder="Password" value="">
+    <input type="password" name="cpassword" class="form-columns" placeholder="Confirm Password" value="">
+    <input type="submit" value="Register" >
+    </form>
+  </body>
+</html>
